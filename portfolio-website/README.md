@@ -4,6 +4,14 @@ A personal portfolio site for Tirth Vaghela, built as the Week 1 Task 1 project 
 
 ---
 
+## Live Demo
+
+**[https://tirth-portfolio-website.vercel.app/](https://tirth-portfolio-website.vercel.app/)**
+
+Deployed on Vercel from the `portfolio-website` directory. All four routes (`/`, `/about`, `/projects`, `/contact`) have been verified working on direct navigation, not just client-side navigation.
+
+---
+
 ## About
 
 The site introduces Tirth Vaghela — currently pursuing an Integrated M.Sc. in IT at GLS University — and presents his background, experience, education, technical skills, and a selection of projects that combine full-stack web development with applied AI/ML (computer vision, OCR, and semantic search/retrieval).
@@ -126,6 +134,22 @@ The site follows an editorial, minimal visual direction:
 - Sharp corners (near-zero border radius) and 1px hairline rules used throughout for structure, instead of cards, shadows, or gradients
 - A three-typeface system: Archivo for headings, Work Sans for body text, JetBrains Mono for small metadata and labels
 - Layouts built with CSS Grid and Flexbox, including asymmetric two-column sections
+
+---
+
+## Screenshots
+
+**Home — desktop**
+![Home page, desktop view](screenshots/portfolio-home-desktop.png)
+
+**Home — mobile**
+![Home page, mobile view](screenshots/portfolio-home-mobile.png)
+
+**Projects**
+![Projects page](screenshots/portfolio-projects.png)
+
+**Contact**
+![Contact page](screenshots/portfolio-contact.png)
 
 ---
 
