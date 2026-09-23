@@ -1,0 +1,1037 @@
+/* =========================================================
+   1. FONT IMPORTS
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Work+Sans:wght@400;500&family=JetBrains+Mono:wght@500&display=swap');
+
+/* =========================================================
+   2. DESIGN TOKENS
+   ========================================================= */
+:root {
+  /* Color */
+  --bg: #F7F6F2;
+  --surface: #FFFFFF;
+  --text: #101114;
+  --text-muted: #54564F;
+  --line: #101114;
+  --accent: #2451D8;
+  --accent-tint: #E7ECFB;
+
+  /* Type */
+  --font-heading: 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --font-body: 'Work Sans', 'Segoe UI', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Courier New', monospace;
+
+  /* Spacing scale */
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+  --space-7: 6rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --border-w: 1px;
+  --radius: 2px;
+  --transition: 150ms ease;
+}
+
+/* =========================================================
+   3. RESET
+   ========================================================= */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, p, figure {
+  margin: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+button, input, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+/* =========================================================
+   4. HTML / BODY DEFAULTS
+   ========================================================= */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* =========================================================
+   5. TYPOGRAPHY
+   ========================================================= */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  color: var(--text);
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(2.25rem, 1.4rem + 3.5vw, 4rem);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: clamp(1.75rem, 1.3rem + 1.8vw, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.25rem, 1.05rem + 0.8vw, 1.5rem);
+}
+
+p {
+  max-width: 68ch;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   6. LINKS
+   ========================================================= */
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* =========================================================
+   7. BUTTONS
+   ========================================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.75rem;
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.btn--accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn--accent:hover,
+.btn--accent:focus-visible {
+  background: var(--accent);
+  color: #FFFFFF;
+  border-color: var(--accent);
+}
+
+/* =========================================================
+   8. CONTAINER
+   ========================================================= */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 3rem);
+}
+
+/* =========================================================
+   9. UTILITIES
+   ========================================================= */
+.section {
+  padding-block: var(--space-7);
+}
+
+.section-heading {
+  margin-bottom: var(--space-4);
+}
+
+.meta-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.meta-list li {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+  padding-block: var(--space-1);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.meta-list li:last-child {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.projects-heading--secondary {
+  margin-top: var(--space-6);
+}
+
+/* =========================================================
+   10. NAVBAR
+   ========================================================= */
+.nav {
+  background: var(--bg);
+  border-bottom: var(--border-w) solid var(--line);
+  position: relative;
+}
+
+.nav__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-3);
+}
+
+.nav__brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.nav__brand:hover {
+  color: var(--accent);
+}
+
+.nav__toggle {
+  display: none;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: transparent;
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color var(--transition), color var(--transition);
+}
+
+.nav__toggle:hover {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.nav__link {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text);
+  text-decoration: none;
+  padding-block: 0.25rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav__link:hover {
+  color: var(--accent);
+}
+
+.nav__link.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+/* =========================================================
+   11. FOOTER
+   ========================================================= */
+.footer {
+  border-top: var(--border-w) solid var(--line);
+  padding-block: var(--space-5);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+}
+
+.footer__copyright {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.footer__links,
+.footer__social {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.footer__link,
+.footer__social a {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.footer__link:hover,
+.footer__social a:hover {
+  color: var(--accent);
+}
+
+/* =========================================================
+   12. HERO
+   ========================================================= */
+.hero {
+  padding-block: var(--space-7) var(--space-6);
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.hero__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-6);
+  align-items: start;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.hero__name {
+  margin-top: var(--space-2);
+}
+
+.hero__meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding-top: var(--space-1);
+  min-width: 180px;
+}
+
+.hero__role {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: clamp(1.1rem, 0.95rem + 0.8vw, 1.4rem);
+  color: var(--accent);
+}
+
+.hero__intro {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  max-width: 56ch;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+/* =========================================================
+   13. ABOUT TEASER
+   ========================================================= */
+.about-teaser__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.about-teaser__text {
+  max-width: 60ch;
+  margin-bottom: var(--space-3);
+}
+
+.about-teaser__meta {
+  min-width: 160px;
+}
+
+.text-link {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================================================
+   14. SELECTED WORK / PROJECT GRID
+   ========================================================= */
+.selected-work__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+
+.project-grid {
+  margin-top: var(--space-4);
+}
+
+/* =========================================================
+   15. PROJECT ROW
+   ========================================================= */
+.project-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "index title meta"
+    "index desc  desc"
+    "index link  link";
+  column-gap: var(--space-4);
+  row-gap: var(--space-1);
+  align-items: baseline;
+  padding-block: var(--space-5);
+  border-top: var(--border-w) solid var(--line);
+  transition: border-color var(--transition);
+}
+
+.project-row:last-child {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.project-row:hover {
+  border-color: var(--accent);
+}
+
+.project-row__index {
+  grid-area: index;
+  align-self: start;
+  padding-top: 0.3em;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.project-row__title {
+  grid-area: title;
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.1rem);
+  transition: color var(--transition);
+}
+
+.project-row:hover .project-row__title {
+  color: var(--accent);
+}
+
+.project-row__meta {
+  grid-area: meta;
+  align-self: start;
+  padding-top: 0.4em;
+  max-width: 260px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.project-row__description {
+  grid-area: desc;
+  max-width: 60ch;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.project-row__link {
+  grid-area: link;
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.project-row__link:hover {
+  text-decoration: underline;
+}
+
+.project-row--lead {
+  padding-block: var(--space-6);
+  border-top-width: 2px;
+}
+
+.project-row--lead .project-row__title {
+  font-size: clamp(1.9rem, 1.4rem + 2vw, 2.6rem);
+}
+
+.project-row--lead .project-row__index {
+  color: var(--accent);
+}
+
+/* =========================================================
+   16. CONTACT CTA
+   ========================================================= */
+.contact-cta {
+  padding-top: var(--space-6);
+}
+
+.contact-cta__row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-5);
+  align-items: center;
+  border-top: var(--border-w) solid var(--line);
+  padding-top: var(--space-4);
+}
+
+.contact-cta__text {
+  max-width: 640px;
+}
+
+.contact-cta__text p {
+  margin-top: var(--space-2);
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   17. PAGE HEADER
+   ========================================================= */
+.page-header {
+  padding-block: var(--space-7) var(--space-5);
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.page-header h1 {
+  margin-top: var(--space-2);
+}
+
+.page-header__lede {
+  margin-top: var(--space-3);
+  max-width: 56ch;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   18. ABOUT PROFILE
+   ========================================================= */
+.about-profile__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.about-profile__content p + p {
+  margin-top: var(--space-3);
+}
+
+.about-profile__meta {
+  min-width: 180px;
+}
+
+/* =========================================================
+   19. CAREER INTERESTS
+   ========================================================= */
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5) var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.interest-item {
+  padding-top: var(--space-3);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.interest-item__title {
+  margin-top: var(--space-1);
+  font-size: 1.15rem;
+}
+
+.interest-item__desc {
+  margin-top: var(--space-1);
+  max-width: 45ch;
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   20. EXPERIENCE
+   ========================================================= */
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(140px, auto) 1fr;
+  gap: var(--space-5);
+  padding-block: var(--space-4);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.experience-item:last-child {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.experience-item__meta p {
+  margin-bottom: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-muted);
+}
+
+.experience-item__meta p:first-child {
+  color: var(--text);
+}
+
+.experience-item__role {
+  font-size: 1.25rem;
+}
+
+.experience-item__description {
+  margin-top: var(--space-1);
+  max-width: 60ch;
+  color: var(--text-muted);
+}
+
+.experience-item__highlights {
+  margin-top: var(--space-2);
+  padding-left: var(--space-3);
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+.experience-item__highlights li {
+  margin-bottom: var(--space-1);
+}
+
+/* =========================================================
+   21. EDUCATION
+   ========================================================= */
+.timeline-row {
+  display: grid;
+  grid-template-columns: minmax(100px, auto) 1fr;
+  gap: var(--space-5);
+  padding-block: var(--space-3);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.timeline-row:last-child {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.timeline-row__date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.timeline-row__title {
+  font-size: 1.05rem;
+}
+
+.timeline-row__meta {
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   22. SKILLS
+   ========================================================= */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+
+.skill-group__category {
+  padding-bottom: var(--space-1);
+  margin-bottom: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.skill-group__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.skill-group__list li {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius);
+  padding: 0.25rem 0.6rem;
+}
+
+/* =========================================================
+   23. CONTACT INTRO
+   ========================================================= */
+.contact-intro__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.contact-meta {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  min-width: 200px;
+}
+
+.contact-meta__group {
+  padding-top: var(--space-2);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.contact-meta__value {
+  margin-top: var(--space-1);
+  font-size: 0.95rem;
+}
+
+.contact-meta .meta-list {
+  margin-top: var(--space-1);
+}
+
+/* =========================================================
+   24. CONTACT PANEL (details + form)
+   ========================================================= */
+.contact-panel__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-top: var(--space-4);
+}
+
+.contact-panel__subheading {
+  margin-bottom: var(--space-3);
+  font-size: 1.05rem;
+}
+
+/* =========================================================
+   25. CONTACT ITEM
+   ========================================================= */
+.contact-item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  padding-block: var(--space-2);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.contact-item:last-child {
+  border-bottom: var(--border-w) solid var(--line);
+}
+
+.contact-item__label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.contact-item__value {
+  display: inline-block;
+  margin-top: var(--space-1);
+  font-size: 0.98rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+a.contact-item__value:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* =========================================================
+   26. CONTACT FORM
+   ========================================================= */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.form-field label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.form-field input,
+.form-field textarea {
+  border: var(--border-w) solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 0.75rem 0.9rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.form-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+}
+
+.form-status {
+  min-height: 1.2em;
+  font-size: 0.88rem;
+  color: var(--accent);
+}
+
+/* =========================================================
+   27. EMAIL FALLBACK
+   ========================================================= */
+.email-fallback {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: var(--border-w) solid var(--line);
+}
+
+.email-fallback__link {
+  display: block;
+  margin-top: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--accent);
+}
+
+/* =========================================================
+   28. CONTACT CLOSING
+   ========================================================= */
+.contact-closing__text {
+  max-width: 60ch;
+  color: var(--text-muted);
+}
+
+/* =========================================================
+   29. RESPONSIVE
+   ========================================================= */
+@media (max-width: 767px) {
+  .section {
+    padding-block: var(--space-5);
+  }
+
+  .hero {
+    padding-block: var(--space-5) var(--space-4);
+  }
+
+  .hero__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__meta {
+    padding-top: var(--space-3);
+    border-top: var(--border-w) solid var(--line);
+  }
+
+  .about-teaser__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-teaser__meta {
+    margin-top: var(--space-3);
+  }
+
+  .project-row {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "index title"
+      "meta  meta"
+      "desc  desc"
+      "link  link";
+    row-gap: var(--space-2);
+  }
+
+  .project-row__meta {
+    max-width: none;
+    text-align: left;
+  }
+
+  .contact-cta__row {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .about-profile__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .about-profile__meta {
+    margin-top: var(--space-3);
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .timeline-row {
+    grid-template-columns: 1fr;
+    gap: var(--space-1);
+  }
+
+  .contact-intro__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-meta {
+    margin-top: var(--space-3);
+  }
+
+  .contact-panel__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .nav__toggle {
+    display: inline-flex;
+  }
+
+  .nav__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    background: var(--surface);
+    border-bottom: var(--border-w) solid var(--line);
+    padding: var(--space-3) clamp(1.25rem, 4vw, 3rem);
+  }
+
+  .nav__links--open {
+    display: flex;
+  }
+
+  .nav__link {
+    width: 100%;
+    padding-block: var(--space-2);
+    border-bottom: var(--border-w) solid var(--line);
+  }
+
+  .nav__link:last-child {
+    border-bottom: none;
+  }
+
+  .footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
