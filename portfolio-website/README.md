@@ -137,9 +137,9 @@ Then visit `http://localhost:8000`.
 
 ## Live Website
 
-Live Demo: https://tirthvaghela.github.io/week-1/
+Live Demo: https://tirth-portfolio-website.vercel.app
 
-The site is deployed automatically from the `master` branch using GitHub Actions and GitHub Pages.
+The site is deployed on Vercel as a static HTML, CSS, and JavaScript project with no build step.
 
 ## Screenshots
 
