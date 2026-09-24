@@ -137,11 +137,20 @@ Then visit `http://localhost:8000`.
 
 ## Live Website
 
-Live Demo: To be added after deployment
+Live Demo: https://tirthvaghela.github.io/week-1/
+
+The site is deployed automatically from the `master` branch using GitHub Actions and GitHub Pages.
 
 ## Screenshots
 
-Screenshots will be added to the repository after final browser and deployment verification.
+The required submission views are included in the `screenshots/` folder:
+
+| View | Screenshot |
+| --- | --- |
+| Desktop full-page home | [portfolio-home-desktop.png](screenshots/portfolio-home-desktop.png) |
+| Mobile homepage | [portfolio-home-mobile.png](screenshots/portfolio-home-mobile.png) |
+| Projects section | [portfolio-projects.png](screenshots/portfolio-projects.png) |
+| Contact page and form | [portfolio-contact.png](screenshots/portfolio-contact.png) |
 
 ## Credits
 
