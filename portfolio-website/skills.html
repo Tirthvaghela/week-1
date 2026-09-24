@@ -33,12 +33,25 @@
   </header>
 
   <main id="main">
-    <section class="hero hero--page hero--wide" aria-labelledby="skills-heading">
+    <section class="hero hero--page hero--centered" aria-labelledby="skills-heading">
       <div class="container hero__grid">
         <div class="hero__main">
           <p class="eyebrow">Skills</p>
           <h1 class="page-title" id="skills-heading">The tools I use, <span>and where I've used them.</span></h1>
+          <div class="hero__cta hero__cta--spaced">
+            <a href="#stack-heading" class="btn btn--sand">Explore the Stack</a>
+            <a href="projects.html" class="btn btn--outline">View Projects</a>
+          </div>
         </div>
+        <aside class="arch" aria-labelledby="stack-info-heading">
+          <div class="arch__seal"><svg class="seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><path id="seal-path" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><g class="rot rot--26"><text class="seal__ring-text"><textPath href="#seal-path">FULL-STACK ENGINEER &bull; AI / COMPUTER VISION &bull; AUTOMATION &bull; </textPath></text></g><circle class="seal__inner" cx="100" cy="100" r="60"/><g class="rot rot--13 rot--rev"><circle class="seal__dot" cx="100" cy="40" r="3.5"/></g><text class="seal__tv seal__tv--hero" x="100" y="116" text-anchor="middle">TV</text></svg></div>
+          <h2 class="arch__eyebrow" id="stack-info-heading">The Stack</h2>
+          <dl class="arch__rows">
+            <div><dt>Areas</dt><dd><a href="#stack-heading">5 technology areas</a></dd></div>
+            <div><dt>Technologies</dt><dd>16 tools</dd></div>
+            <div><dt>Used across</dt><dd><a href="projects.html">12 projects</a></dd></div>
+          </dl>
+        </aside>
       </div>
     </section>
 
@@ -48,73 +61,85 @@
           <h2 class="display display--md" id="stack-heading">Technology by area</h2>
           <p class="label">01 / Stack</p>
         </div>
-        <ul class="skills">
-          <li class="skill">
-            <span class="skill__num" aria-hidden="true">01</span>
-            <div class="skill__main">
-              <h3 class="skill__name">Languages</h3>
-              <ul class="pills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li></ul>
-            </div>
-            <div class="skill__used">
-              <p class="skill__label">Used in</p>
-              <ul class="also__list"><li><a href="projects.html#voiceformai">VoiceFormAI</a></li><li><a href="projects.html#gls-student-portal">GLS University Student Portal</a></li></ul>
-            </div>
-          </li>
-          <li class="skill">
-            <span class="skill__num" aria-hidden="true">02</span>
-            <div class="skill__main">
-              <h3 class="skill__name">Frontend</h3>
-              <ul class="pills"><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul>
-            </div>
-            <div class="skill__used">
-              <p class="skill__label">Used in</p>
-              <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#projectmindai">ProjectMindAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#freshvault">FreshVault</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li><li><a href="projects.html#gls-student-portal">GLS University Student Portal</a></li></ul>
-            </div>
-          </li>
-          <li class="skill">
-            <span class="skill__num" aria-hidden="true">03</span>
-            <div class="skill__main">
-              <h3 class="skill__name">Backend</h3>
-              <ul class="pills"><li>Django</li><li>FastAPI</li><li>Flask</li><li>JWT / Authentication</li></ul>
-            </div>
-            <div class="skill__used">
-              <p class="skill__label">Used in</p>
-              <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#projectmindai">ProjectMindAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#eventease">EventEase</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#electrox-mobile">Electrox-Mobile</a></li><li><a href="projects.html#wedding-face-finder">Wedding Face Finder</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li></ul>
-            </div>
-          </li>
-          <li class="skill">
-            <span class="skill__num" aria-hidden="true">04</span>
-            <div class="skill__main">
-              <h3 class="skill__name">Databases</h3>
-              <ul class="pills"><li>MongoDB</li><li>MySQL</li></ul>
-            </div>
-            <div class="skill__used">
-              <p class="skill__label">Used in</p>
-              <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#freshvault">FreshVault</a></li><li><a href="projects.html#electrox-mobile">Electrox-Mobile</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li></ul>
-            </div>
-          </li>
-          <li class="skill">
-            <span class="skill__num" aria-hidden="true">05</span>
-            <div class="skill__main">
-              <h3 class="skill__name">AI / Computer Vision</h3>
-              <ul class="pills"><li>Computer Vision</li><li>OCR</li><li>YOLO</li></ul>
-            </div>
-            <div class="skill__used">
-              <p class="skill__label">Used in</p>
-              <ul class="also__list"><li><a href="projects.html#voiceformai">VoiceFormAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#wedding-face-finder">Wedding Face Finder</a></li></ul>
-            </div>
-          </li>
-        </ul>
+        <div class="areas">
+        <article class="area area--burgundy area--1">
+          <div class="area__head">
+            <span class="area__num" aria-hidden="true">01</span>
+            <span class="area__count">2 projects</span>
+          </div>
+          <h3 class="area__name">Languages</h3>
+          <ul class="pills"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li></ul>
+          <div class="area__used">
+            <p class="area__label">Used in</p>
+            <ul class="also__list"><li><a href="projects.html#voiceformai">VoiceFormAI</a></li><li><a href="projects.html#gls-student-portal">GLS University Student Portal</a></li></ul>
+          </div>
+        </article>
+        <article class="area area--dark area--2">
+          <div class="area__head">
+            <span class="area__num" aria-hidden="true">02</span>
+            <span class="area__count">8 projects</span>
+          </div>
+          <h3 class="area__name">Frontend</h3>
+          <ul class="pills"><li>React</li><li>Next.js</li><li>Tailwind CSS</li></ul>
+          <div class="area__used">
+            <p class="area__label">Used in</p>
+            <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#projectmindai">ProjectMindAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#freshvault">FreshVault</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li><li><a href="projects.html#gls-student-portal">GLS University Student Portal</a></li></ul>
+          </div>
+        </article>
+        <article class="area area--sand area--3">
+          <div class="area__head">
+            <span class="area__num" aria-hidden="true">03</span>
+            <span class="area__count">8 projects</span>
+          </div>
+          <h3 class="area__name">Backend</h3>
+          <ul class="pills"><li>Django</li><li>FastAPI</li><li>Flask</li><li>JWT / Authentication</li></ul>
+          <div class="area__used">
+            <p class="area__label">Used in</p>
+            <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#projectmindai">ProjectMindAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#eventease">EventEase</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#electrox-mobile">Electrox-Mobile</a></li><li><a href="projects.html#wedding-face-finder">Wedding Face Finder</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li></ul>
+          </div>
+        </article>
+        <article class="area area--paper area--4">
+          <div class="area__head">
+            <span class="area__num" aria-hidden="true">04</span>
+            <span class="area__count">7 projects</span>
+          </div>
+          <h3 class="area__name">Databases</h3>
+          <ul class="pills"><li>MongoDB</li><li>MySQL</li></ul>
+          <div class="area__used">
+            <p class="area__label">Used in</p>
+            <ul class="also__list"><li><a href="projects.html#fileflow-ai">FileFlow AI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#vois">Vois</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#freshvault">FreshVault</a></li><li><a href="projects.html#electrox-mobile">Electrox-Mobile</a></li><li><a href="projects.html#electrox-web">Electrox Web</a></li></ul>
+          </div>
+        </article>
+        <article class="area area--rose area--5">
+          <div class="area__head">
+            <span class="area__num" aria-hidden="true">05</span>
+            <span class="area__count">4 projects</span>
+          </div>
+          <h3 class="area__name">AI / Computer Vision</h3>
+          <ul class="pills"><li>Computer Vision</li><li>OCR</li><li>YOLO</li></ul>
+          <div class="area__used">
+            <p class="area__label">Used in</p>
+            <ul class="also__list"><li><a href="projects.html#voiceformai">VoiceFormAI</a></li><li><a href="projects.html#urban-signal">Urban Signal</a></li><li><a href="projects.html#rigs">RIGS</a></li><li><a href="projects.html#wedding-face-finder">Wedding Face Finder</a></li></ul>
+          </div>
+        </article>
+        </div>
       </div>
     </section>
 
     <section class="band band--dark" aria-labelledby="focus-heading">
       <div class="container">
-        <div class="focus focus--solo">
-          <span class="focus__quote" aria-hidden="true">&ldquo;</span>
-          <div>
-            <p class="label label--rose" id="focus-heading">Current Focus</p>
-            <p class="focus__text">Building practical full-stack systems and exploring <span>AI / computer-vision</span> workflows.</p>
+        <h2 class="focus-label" id="focus-heading"><span class="focus-label__dot" aria-hidden="true"></span>Current Focus</h2>
+        <div class="fx">
+          <div class="fx__tile fx__tile--burgundy">
+            <p class="fx__text">Building practical full-stack systems</p>
+            <ul class="pills"><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Django</li><li>FastAPI</li><li>Flask</li><li>MongoDB</li><li>MySQL</li></ul>
+            <a class="fx__link" href="projects.html">See the projects <span aria-hidden="true">&rarr;</span></a>
+          </div>
+          <span class="fx__and">and</span>
+          <div class="fx__tile fx__tile--sand">
+            <p class="fx__text">exploring AI / computer-vision workflows.</p>
+            <ul class="pills"><li>Computer Vision</li><li>OCR</li><li>YOLO</li></ul>
+            <a class="fx__link" href="projects.html#voiceformai">See VoiceFormAI <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </div>
@@ -156,7 +181,6 @@
           </div>
         </div>
         <nav class="site-footer__nav" aria-label="Footer navigation">
-          <p class="label">Pages</p>
           <ul class="site-footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>

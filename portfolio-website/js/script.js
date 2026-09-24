@@ -186,8 +186,8 @@
 
 (function () {
   var targets = document.querySelectorAll(
-    '.work__head, .tile, .build__head, .cap-grid, .about-preview__grid > *, .focus, .toolbox__head, .toolbox, ' +
-    '.how__tile, .split__side, .msg-card, .bento, .interests__grid, .tickets, .els, .project-band__grid > *, .statement, .idx__intro, .idx__row, .skill, .resume, .also, .cta__grid > *'
+    '.work__head, .tile, .build__head, .cap, .abt, .editor, .toolbox__head, ' +
+    '.how__tile, .split__side, .msg-card, .bento, .int__copy, .int__visual, .tickets, .els, .case__top, .case__bottom, .summary__grid, .idx__intro, .idx__row, .areas, .fx, .resume__head, .rs, .more__bar, .cta__grid > *'
   );
 
   if (!('IntersectionObserver' in window) ||

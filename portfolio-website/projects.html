@@ -33,99 +33,152 @@
   </header>
 
   <main id="main">
-    <section class="hero hero--page hero--wide" aria-labelledby="projects-heading">
+    <section class="hero hero--page hero--centered" aria-labelledby="projects-heading">
       <div class="container hero__grid">
         <div class="hero__main">
           <p class="eyebrow">Projects</p>
           <h1 class="page-title" id="projects-heading">Selected work across <span>full-stack development, automation,</span> and computer vision.</h1>
+          <div class="hero__cta hero__cta--spaced">
+            <a href="#voiceformai" class="btn btn--sand">View Featured Work</a>
+            <a href="#more-heading" class="btn btn--outline">Browse the Index</a>
+          </div>
         </div>
+        <aside class="arch" aria-labelledby="index-info-heading">
+          <div class="arch__seal"><svg class="seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><path id="seal-path" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><g class="rot rot--26"><text class="seal__ring-text"><textPath href="#seal-path">FULL-STACK ENGINEER &bull; AI / COMPUTER VISION &bull; AUTOMATION &bull; </textPath></text></g><circle class="seal__inner" cx="100" cy="100" r="60"/><g class="rot rot--13 rot--rev"><circle class="seal__dot" cx="100" cy="40" r="3.5"/></g><text class="seal__tv seal__tv--hero" x="100" y="116" text-anchor="middle">TV</text></svg></div>
+          <h2 class="arch__eyebrow" id="index-info-heading">Project Index</h2>
+          <dl class="arch__rows">
+            <div><dt>Featured</dt><dd><a href="#voiceformai">3 case studies</a></dd></div>
+            <div><dt>Also built</dt><dd><a href="#more-heading">9 more projects</a></dd></div>
+            <div><dt>Categories</dt><dd>AI / ML &middot; Full-Stack &middot; Web &middot; Mobile</dd></div>
+          </dl>
+        </aside>
       </div>
     </section>
 
-    <section class="project-band project-band--burgundy" id="voiceformai" aria-labelledby="voiceformai-heading">
-      <div class="container project-band__grid">
-        <div class="project-band__text">
-          <div class="project-band__top">
-            <span class="project-band__num" aria-hidden="true">01</span>
-            <span class="chip">Active / In Development</span>
+    <section class="project-band project-band--burgundy case" id="voiceformai" aria-labelledby="voiceformai-heading">
+      <div class="container">
+        <div class="case__top">
+          <div class="case__intro">
+            <div class="case__meta">
+              <span class="project-band__num" aria-hidden="true">01</span>
+              <span class="chip">Active / In Development</span>
+            </div>
+            <h2 class="project-band__title case__title" id="voiceformai-heading">VoiceFormAI</h2>
+            <p class="project-band__cat">Computer Vision / Voice / Automation</p>
+            <p class="project-band__desc">Combines document understanding, OCR, and computer vision to identify form fields on a paper form and match them with spoken answers, so a person can fill a form by talking instead of writing by hand.</p>
           </div>
-          <h2 class="project-band__title" id="voiceformai-heading">VoiceFormAI</h2>
-          <p class="project-band__cat">Computer Vision / Voice / Automation</p>
-          <p class="project-band__desc">Combines document understanding, OCR, and computer vision to identify form fields on a paper form and match them with spoken answers, so a person can fill a form by talking instead of writing by hand.</p>
-          <dl class="project-band__meta">
-            <div><dt>Technology</dt><dd>Python &middot; YOLO &middot; OpenCV &middot; OCR &middot; Gemini / Vision</dd></div>
-          </dl>
-          <h3 class="project-band__sub">Key Features</h3>
-          <ul class="features">
-            <li>Detects and locates writable fields on a scanned or photographed form.</li>
-            <li>Converts spoken answers into text mapped to the correct field.</li>
-            <li>Uses OCR and vision models together to handle real, imperfect paper forms.</li>
-          </ul>
-        </div>
-        <div class="project-band__visual">
-          <div class="viz viz--vf viz--band" aria-hidden="true">
-            <div class="vf">
-              <div class="vf__lines"><span></span><span></span><span></span><span></span></div>
-              <div class="vf__wave"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-              <p class="vf__cap">Voice input</p>
-              <p class="vf__cap vf__cap--hit">Field detected</p>
+          <div class="case__visual" aria-hidden="true">
+            <div class="mock mock--form">
+              <div class="mock__paper">
+                <span class="mock__bar"></span>
+                <div class="mock__field"><i></i><b></b></div>
+                <div class="mock__field mock__field--hit"><i></i><b></b><em>Field detected</em></div>
+                <div class="mock__field"><i></i><b></b></div>
+              </div>
+              <div class="mock__voice"><span class="mock__mic"></span><span class="mock__wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span><small>Voice input</small></div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="project-band project-band--dark project-band--flip" id="fileflow-ai" aria-labelledby="fileflow-heading">
-      <div class="container project-band__grid">
-        <div class="project-band__text">
-          <div class="project-band__top">
-            <span class="project-band__num" aria-hidden="true">02</span>
-            <span class="chip">Active / In Development</span>
+        <div class="case__bottom">
+          <div class="case__block">
+            <h3 class="project-band__sub">Key Features</h3>
+            <ul class="case__features">
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">01</span><p>Detects and locates writable fields on a scanned or photographed form.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">02</span><p>Converts spoken answers into text mapped to the correct field.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">03</span><p>Uses OCR and vision models together to handle real, imperfect paper forms.</p></li>
+            </ul>
           </div>
-          <h2 class="project-band__title" id="fileflow-heading">FileFlow AI</h2>
-          <p class="project-band__cat">Automation / RPA</p>
-          <p class="project-band__desc">An RPA-oriented tool that automatically sorts and manages files based on configurable rules, reducing manual file cleanup.</p>
-          <dl class="project-band__meta">
-            <div><dt>Technology</dt><dd>React &middot; Vite &middot; Tailwind CSS &middot; FastAPI &middot; MongoDB &middot; UiPath &middot; Windows agent</dd></div>
-          </dl>
-          <h3 class="project-band__sub">Key Features</h3>
-          <ul class="features">
-            <li>Rule-based file classification across multiple folders.</li>
-            <li>Undo support for automated actions.</li>
-            <li>Authenticated dashboard with activity reports.</li>
-          </ul>
-        </div>
-        <div class="project-band__visual">
-          <div class="viz viz--ff viz--band" aria-hidden="true">
-            <div class="ff"><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="case__block case__block--tech">
+            <h3 class="project-band__sub">Technology</h3>
+            <ul class="pills"><li>Python</li><li>YOLO</li><li>OpenCV</li><li>OCR</li><li>Gemini / Vision</li></ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="project-band project-band--sand" id="projectmindai" aria-labelledby="projectmind-heading">
-      <div class="container project-band__grid">
-        <div class="project-band__text">
-          <div class="project-band__top">
-            <span class="project-band__num" aria-hidden="true">03</span>
-            <span class="chip chip--burgundy">Completed</span>
+    <section class="project-band project-band--dark case case--flip" id="fileflow-ai" aria-labelledby="fileflow-heading">
+      <div class="container">
+        <div class="case__top">
+          <div class="case__intro">
+            <div class="case__meta">
+              <span class="project-band__num" aria-hidden="true">02</span>
+              <span class="chip">Active / In Development</span>
+            </div>
+            <h2 class="project-band__title case__title" id="fileflow-heading">FileFlow AI</h2>
+            <p class="project-band__cat">Automation / RPA</p>
+            <p class="project-band__desc">An RPA-oriented tool that automatically sorts and manages files based on configurable rules, reducing manual file cleanup.</p>
           </div>
-          <h2 class="project-band__title" id="projectmind-heading">ProjectMindAI</h2>
-          <p class="project-band__cat">NLP / Search</p>
-          <p class="project-band__desc">Helps navigate and query project content by combining semantic search, keyword search, and an AI assistant that stays aware of the project's context.</p>
-          <dl class="project-band__meta">
-            <div><dt>Technology</dt><dd>React &middot; Flask &middot; NLP &middot; BM25 &middot; Sentence-Transformers</dd></div>
-          </dl>
-          <h3 class="project-band__sub">Key Features</h3>
-          <ul class="features">
-            <li>Semantic search using sentence-transformer embeddings.</li>
-            <li>Keyword search using BM25, combined with semantic results.</li>
-            <li>Project/context-aware AI assistant for querying workspace content.</li>
-          </ul>
+          <div class="case__visual" aria-hidden="true">
+            <div class="mock mock--files">
+              <div class="mock__window">
+                <div class="mock__chrome"><i></i><i></i><i></i><small>Rules</small></div>
+                <ul class="mock__rows">
+                  <li><span class="mock__file"></span><span class="mock__line"></span><span class="mock__arrow">&rarr;</span><span class="mock__folder mock__folder--sand"></span></li>
+                  <li><span class="mock__file"></span><span class="mock__line mock__line--short"></span><span class="mock__arrow">&rarr;</span><span class="mock__folder mock__folder--rose"></span></li>
+                  <li><span class="mock__file"></span><span class="mock__line"></span><span class="mock__arrow">&rarr;</span><span class="mock__folder mock__folder--burgundy"></span></li>
+                  <li><span class="mock__file"></span><span class="mock__line mock__line--short"></span><span class="mock__arrow">&rarr;</span><span class="mock__folder mock__folder--sand"></span></li>
+                </ul>
+                <div class="mock__foot"><span class="mock__undo">&larr; Undo</span><span class="mock__spark"><i></i><i></i><i></i><i></i><i></i></span><small>Activity</small></div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="project-band__visual">
-          <div class="viz viz--pm viz--band" aria-hidden="true">
-            <div class="pm"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="case__bottom">
+          <div class="case__block">
+            <h3 class="project-band__sub">Key Features</h3>
+            <ul class="case__features">
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">01</span><p>Rule-based file classification across multiple folders.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">02</span><p>Undo support for automated actions.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">03</span><p>Authenticated dashboard with activity reports.</p></li>
+            </ul>
+          </div>
+          <div class="case__block case__block--tech">
+            <h3 class="project-band__sub">Technology</h3>
+            <ul class="pills"><li>React</li><li>Vite</li><li>Tailwind CSS</li><li>FastAPI</li><li>MongoDB</li><li>UiPath</li><li>Windows agent</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-band project-band--sand case" id="projectmindai" aria-labelledby="projectmind-heading">
+      <div class="container">
+        <div class="case__top">
+          <div class="case__intro">
+            <div class="case__meta">
+              <span class="project-band__num" aria-hidden="true">03</span>
+              <span class="chip chip--burgundy">Completed</span>
+            </div>
+            <h2 class="project-band__title case__title" id="projectmind-heading">ProjectMindAI</h2>
+            <p class="project-band__cat">NLP / Search</p>
+            <p class="project-band__desc">Helps navigate and query project content by combining semantic search, keyword search, and an AI assistant that stays aware of the project's context.</p>
+          </div>
+          <div class="case__visual" aria-hidden="true">
+            <div class="mock mock--search">
+              <div class="mock__window mock__window--white">
+                <div class="mock__searchbar"><span class="mock__glass"></span><span class="mock__line"></span></div>
+                <div class="mock__tabs"><span class="mock__tab mock__tab--on">Semantic</span><span class="mock__tab">Keyword &middot; BM25</span></div>
+                <ul class="mock__results">
+                  <li><span class="mock__dot mock__dot--on"></span><span class="mock__line"></span><span class="mock__score"></span></li>
+                  <li><span class="mock__dot"></span><span class="mock__line mock__line--short"></span><span class="mock__score mock__score--low"></span></li>
+                  <li><span class="mock__dot"></span><span class="mock__line"></span><span class="mock__score mock__score--mid"></span></li>
+                </ul>
+                <div class="mock__bubble"><small>AI assistant</small><span class="mock__line"></span><span class="mock__line mock__line--short"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="case__bottom">
+          <div class="case__block">
+            <h3 class="project-band__sub">Key Features</h3>
+            <ul class="case__features">
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">01</span><p>Semantic search using sentence-transformer embeddings.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">02</span><p>Keyword search using BM25, combined with semantic results.</p></li>
+              <li class="case__feat"><span class="case__fnum" aria-hidden="true">03</span><p>Project/context-aware AI assistant for querying workspace content.</p></li>
+            </ul>
+          </div>
+          <div class="case__block case__block--tech">
+            <h3 class="project-band__sub">Technology</h3>
+            <ul class="pills"><li>React</li><li>Flask</li><li>NLP</li><li>BM25</li><li>Sentence-Transformers</li></ul>
           </div>
         </div>
       </div>
@@ -238,9 +291,22 @@
       </div>
     </section>
 
-    <section class="band band--paper" aria-label="Summary">
-      <div class="container">
-        <p class="statement">Together, these projects span full-stack web and mobile development, computer vision, and intelligent search &mdash; connected by a focus on practical, working systems rather than isolated demos.</p>
+    <section class="band band--paper-2 summary" aria-label="Summary">
+      <div class="container summary__grid">
+        <div class="summary__text">
+          <p class="label">In Short</p>
+          <p class="statement">Together, these projects span <span class="hl">full-stack web and mobile development</span>, <span class="hl">computer vision</span>, and <span class="hl">intelligent search</span> &mdash; connected by a focus on practical, working systems rather than isolated demos.</p>
+          <div class="summary__cta">
+            <a href="contact.html" class="btn btn--burgundy btn--arrow">Discuss a project <span class="btn__dot" aria-hidden="true">&rarr;</span></a>
+            <a href="skills.html" class="text-link">See the skills <span aria-hidden="true">&rarr;</span></a>
+          </div>
+        </div>
+        <dl class="numbers">
+          <div class="number number--burgundy"><dd>12</dd><dt>Projects</dt></div>
+          <div class="number number--dark"><dd>3</dd><dt>Featured case studies</dt></div>
+          <div class="number number--sand"><dd>9</dd><dt>More in the index</dt></div>
+          <div class="number number--paper"><dd>4</dd><dt>Index categories</dt></div>
+        </dl>
       </div>
     </section>
 
@@ -280,7 +346,6 @@
           </div>
         </div>
         <nav class="site-footer__nav" aria-label="Footer navigation">
-          <p class="label">Pages</p>
           <ul class="site-footer__links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>

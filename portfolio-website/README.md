@@ -13,7 +13,7 @@ A professional personal portfolio website built for the Week 1 Web Development a
 - Contact form with native HTML5 validation and optional topic pills; there is no server, so sending opens the visitor's email app with the message ready to go
 - Category filter on the project index, with screen-reader announcements (progressive enhancement)
 - Skills page listing each technology area with the projects that use it (matched from each project's tech tags)
-- Resume page with a short on-page summary, a print-friendly layout, and a download button for the full resume (PDF)
+- Resume page: a profile card with section index beside numbered sections (education timeline, experience, skills, projects, certifications, additional information), a print-friendly single-column layout, and a download button for the full resume (PDF)
 - "Copy" button on the email pill (progressive enhancement — hidden if JavaScript or the clipboard API is unavailable)
 - Dark and light theme toggle in the header; the choice is remembered between pages and visits (`localStorage`)
 - Smooth scrolling for in-page links such as "Back to top"
@@ -25,11 +25,11 @@ A professional personal portfolio website built for the Week 1 Web Development a
 
 ## Pages
 
-- **Home** (`index.html`) — hero, areas of work, selected projects, capabilities, about preview, current focus and technology toolbox, contact call-to-action
+- **Home** (`index.html`) — hero, areas of work, selected projects, capabilities, about preview, current focus and technology toolbox (a code-editor panel that links to the Skills page), contact call-to-action
 - **About** (`about.html`) — profile, education and experience tiles, career interests, certifications, how I work, and a technology ticker that links to the Skills page
 - **Projects** (`projects.html`) — case-study presentation of three featured projects, plus a filterable index of nine more
 - **Skills** (`skills.html`) — five technology areas, each with the projects that use them
-- **Resume** (`resume.html`) — summary of profile, education, skills, and projects, with a download button for the full resume PDF
+- **Resume** (`resume.html`) — profile card, education timeline, experience, skills, projects, certifications, and additional information, with a download button for the full resume PDF
 - **Contact** (`contact.html`) — contact details, a resume download link, and a message form
 
 ## Projects
