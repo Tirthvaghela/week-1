@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &mdash; Tirth Vaghela</title>
+  <meta name="description" content="Get in touch with Tirth Vaghela by email, GitHub, LinkedIn, or the contact form.">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/theme-init.js"></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="index.html" class="brand" aria-label="Tirth Vaghela, home">
+        <span class="brand__seal"><svg class="seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><g class="rot rot--14"><circle class="seal__dash" cx="100" cy="100" r="92"/></g><text class="seal__tv seal__tv--mini" x="100" y="124" text-anchor="middle">TV</text></svg></span>
+        Tirth Vaghela
+      </a>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-links" id="primary-navigation">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="skills.html" class="nav-link">Skills</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+          <li class="nav-links__theme" data-theme-item hidden><button type="button" class="theme-toggle" id="theme-toggle" aria-pressed="false"><span class="theme-toggle__icon" aria-hidden="true"></span>Dark mode</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero--page" aria-labelledby="contact-heading">
+      <div class="container hero__grid">
+        <div class="hero__main">
+          <p class="eyebrow">Contact</p>
+          <h1 class="hero__title" id="contact-heading">Let's<br>Build<br>Something<span>.</span></h1>
+          <p class="hero__intro">Have a project, idea, or opportunity to discuss? Get in touch.</p>
+        </div>
+        <aside class="arch" aria-labelledby="contact-info-heading">
+          <div class="arch__seal"><svg class="seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><defs><path id="seal-path" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs><g class="rot rot--26"><text class="seal__ring-text"><textPath href="#seal-path">FULL-STACK ENGINEER &bull; AI / COMPUTER VISION &bull; AUTOMATION &bull; </textPath></text></g><circle class="seal__inner" cx="100" cy="100" r="60"/><g class="rot rot--13 rot--rev"><circle class="seal__dot" cx="100" cy="40" r="3.5"/></g><text class="seal__tv seal__tv--hero" x="100" y="116" text-anchor="middle">TV</text></svg></div>
+          <h2 class="arch__eyebrow" id="contact-info-heading">Contact Information</h2>
+          <dl class="arch__rows">
+            <div><dt>Email</dt><dd><a href="mailto:vaghelatirth719@gmail.com">vaghelatirth719@gmail.com</a></dd></div>
+            <div><dt>GitHub</dt><dd><a href="https://github.com/Tirthvaghela" target="_blank" rel="noopener noreferrer">github.com/Tirthvaghela<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+            <div><dt>LinkedIn</dt><dd><a href="https://www.linkedin.com/in/tirthvaghela/" target="_blank" rel="noopener noreferrer">linkedin.com/in/tirthvaghela<span class="sr-only"> (opens in a new tab)</span></a></dd></div>
+            <div><dt>Resume</dt><dd><a href="assets/resume/Tirth-Vaghela-Resume.pdf" download>Download PDF<span class="sr-only"> (PDF download)</span></a></dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="band band--sand" aria-labelledby="message-heading">
+      <div class="container">
+        <div class="msg-card">
+          <div class="msg-card__intro">
+            <svg class="msg-card__ring seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><g class="rot rot--60"><circle class="seal__dash" cx="100" cy="100" r="92"/></g></svg>
+            <p class="label label--sand">01 / Message</p>
+            <h2 class="display display--xl" id="message-heading">Send a<br>message</h2>
+            <p class="prose">Whether it's a project, an opportunity, or just a question &mdash; feel free to reach out.</p>
+            <div class="side__alt">
+              <p class="side__alt-label">Prefer email?</p>
+              <p class="side__alt-row"><a href="mailto:vaghelatirth719@gmail.com">vaghelatirth719@gmail.com</a><button type="button" class="copy-btn" data-copy="vaghelatirth719@gmail.com" hidden>Copy</button></p>
+            </div>
+          </div>
+          <form class="form" id="contact-form" action="mailto:vaghelatirth719@gmail.com" method="post" enctype="text/plain" data-mailto="mailto:vaghelatirth719@gmail.com">
+            <fieldset class="topic">
+              <legend>What's it about?</legend>
+              <div class="topic__pills">
+                <label class="topic__pill"><input type="radio" name="topic" value="Project"><span>Project</span></label>
+                <label class="topic__pill"><input type="radio" name="topic" value="Opportunity"><span>Opportunity</span></label>
+                <label class="topic__pill"><input type="radio" name="topic" value="Question"><span>Question</span></label>
+              </div>
+            </fieldset>
+            <div class="form__row">
+              <div class="field">
+                <label for="name"><span class="field__num" aria-hidden="true">01</span>Name</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+              <div class="field">
+                <label for="email"><span class="field__num" aria-hidden="true">02</span>Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+              </div>
+            </div>
+            <div class="field">
+              <label for="message"><span class="field__num" aria-hidden="true">03</span>Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <div class="form__actions">
+              <button type="submit" class="btn btn--burgundy btn--arrow">Send Message <span class="btn__dot" aria-hidden="true">&rarr;</span></button>
+              <p class="form__note">This site has no server: sending opens your email app with the message ready to go.</p>
+            </div>
+            <p class="form__status" id="form-status" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer site-footer--solo">
+    <div class="container">
+      <div class="site-footer__row">
+        <div class="site-footer__brand">
+          <span class="site-footer__seal"><svg class="seal" viewBox="0 0 200 200" aria-hidden="true" focusable="false"><g class="rot rot--14"><circle class="seal__dash" cx="100" cy="100" r="92"/></g><text class="seal__tv seal__tv--mini" x="100" y="124" text-anchor="middle">TV</text></svg></span>
+          <div>
+            <p class="site-footer__name">Tirth Vaghela</p>
+            <p class="site-footer__role">Full-Stack Engineer &amp; AI/ML Systems Developer</p>
+          </div>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <p class="label">Pages</p>
+          <ul class="site-footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="site-footer__end">
+          <a class="site-footer__top" href="#top">Back to top <span class="site-footer__top-dot" aria-hidden="true">&uarr;</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="wordmark" aria-hidden="true">Tirth Vaghela</p>
+    <div class="legal">
+      <div class="container legal__inner">
+        <span>&copy; 2026 Tirth Vaghela</span>
+        <span class="legal__mid">Designed &amp; built by Tirth Vaghela</span>
+        <span>GLS University &middot; 2027</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

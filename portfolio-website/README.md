@@ -1,191 +1,159 @@
-# Tirth Vaghela — Portfolio
+# Tirth Vaghela — Portfolio Website
 
-A personal portfolio site for Tirth Vaghela, built as the Week 1 Task 1 project for the WeIntern internship program. It showcases work across full-stack development, AI/ML, computer vision, and NLP.
+## Overview
 
----
+A professional personal portfolio website built for the Week 1 Web Development assignment. It presents a personal introduction, education background, technical skills, selected projects, and contact information across six pages.
 
-## Live Demo
+## Features
 
-**[https://tirth-portfolio-website.vercel.app/](https://tirth-portfolio-website.vercel.app/)**
-
-Deployed on Vercel from the `portfolio-website` directory. All four routes (`/`, `/about`, `/projects`, `/contact`) have been verified working on direct navigation, not just client-side navigation.
-
----
-
-## About
-
-The site introduces Tirth Vaghela — currently pursuing an Integrated M.Sc. in IT at GLS University — and presents his background, experience, education, technical skills, and a selection of projects that combine full-stack web development with applied AI/ML (computer vision, OCR, and semantic search/retrieval).
-
----
+- Responsive multi-page portfolio (Home, About, Projects, Skills, Resume, Contact)
+- Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `article`, `footer`)
+- Case-study style project presentation with abstract, CSS-drawn visuals (no screenshots or stock images)
+- Accessible mobile navigation with a toggle menu (`aria-expanded`, `aria-controls`, Escape support, focus restoration)
+- Contact form with native HTML5 validation and optional topic pills; there is no server, so sending opens the visitor's email app with the message ready to go
+- Category filter on the project index, with screen-reader announcements (progressive enhancement)
+- Skills page listing each technology area with the projects that use it (matched from each project's tech tags)
+- Resume page with a short on-page summary, a print-friendly layout, and a download button for the full resume (PDF)
+- "Copy" button on the email pill (progressive enhancement — hidden if JavaScript or the clipboard API is unavailable)
+- Dark and light theme toggle in the header; the choice is remembered between pages and visits (`localStorage`)
+- Smooth scrolling for in-page links such as "Back to top"
+- Sections fade in as they scroll into view (progressive enhancement — content is never hidden without JavaScript)
+- Decorative rotating "TV" monogram and contact ring, drawn as inline SVG
+- Keyboard-accessible navigation with a skip link and visible focus states
+- `prefers-reduced-motion` support (rotation, scroll reveals, and smooth scrolling are switched off)
+- Layouts tested across mobile, tablet, and desktop widths
 
 ## Pages
 
-- `/` — **Home**: an introduction (name, role, short intro), a condensed "About" teaser, three featured projects, and a closing call to action.
-- `/about` — **About**: full profile, career interests, work experience, education, and a categorized skills list.
-- `/projects` — **Projects**: all five projects, grouped into Featured Work and Additional Work, each with a fuller description and tech list.
-- `/contact` — **Contact**: contact details and a message form.
+- **Home** (`index.html`) — hero, areas of work, selected projects, capabilities, about preview, current focus and technology toolbox, contact call-to-action
+- **About** (`about.html`) — profile, education and experience tiles, career interests, certifications, how I work, and a technology ticker that links to the Skills page
+- **Projects** (`projects.html`) — case-study presentation of three featured projects, plus a filterable index of nine more
+- **Skills** (`skills.html`) — five technology areas, each with the projects that use them
+- **Resume** (`resume.html`) — summary of profile, education, skills, and projects, with a download button for the full resume PDF
+- **Contact** (`contact.html`) — contact details, a resume download link, and a message form
 
----
+## Projects
 
-## Featured Projects
+### VoiceFormAI
+Voice-assisted paper form-filling system using computer vision, OCR, and AI-based document understanding.
 
-Five projects are documented on the Projects page:
+### FileFlow AI
+RPA-oriented file organization system using rule-based classification and automation.
 
-1. **VoiceForm AI** — AI-powered document assistant that detects form fields, extracts labels using OCR, and guides users through form completion using multilingual voice interaction.
-2. **ProjectMindAI** — Intelligent project discovery system combining semantic embeddings and BM25 keyword search for hybrid retrieval, project recommendations, and similar-project discovery.
-3. **RIGS** — Automated traffic-violation detection using YOLOv8 and OCR to identify helmetless riders, extract license plates, and generate e-challans.
-4. **Urban Signal** — Real-time traffic management system using YOLOv4 and OpenCV for vehicle detection, congestion analysis, dynamic signal timing, and emergency-vehicle prioritization.
-5. **Wedding Face Finder** — AI-powered facial search system using DeepFace, ArcFace, and RetinaFace to identify people across thousands of photos through facial embeddings and similarity matching.
+### ProjectMindAI
+Project/workspace assistant combining semantic search with an AI assistant.
 
-None of these projects currently have a live demo or repository link published, so none are linked from the site.
+### More projects
 
----
+Nine further projects are listed on the Projects page as an editorial project index, each with its category, a short description, and its technology tags. The index can be filtered by category (the filter appears when JavaScript is available; without it all projects are shown):
+
+- **Urban Signal** — AI / ML: intelligent traffic management system
+- **EventEase** — Web: event management platform
+- **Vois** — Full-Stack: social media platform
+- **RIGS** — AI / ML: Roadside Intelligent Governance System
+- **FreshVault** — Web: local pantry e-commerce platform
+- **Electrox-Mobile** — Mobile: mobile digital voting platform
+- **Wedding Face Finder** — AI / ML: AI photo search system
+- **Electrox Web** — Full-Stack: secure digital voting platform
+- **GLS University Student Portal** — Web: mobile-first student portal
+
+*(Repository links for these projects will be added once available.)*
 
 ## Tech Stack
 
-This portfolio **site itself** is built with:
+- HTML5
+- CSS3 (Flexbox, Grid, custom properties)
+- Vanilla JavaScript — no frameworks, no build step, no dependencies
+- Fonts are self-hosted (`assets/fonts/`), so the site makes no third-party requests
 
-- React 19
-- React Router (`react-router-dom`) for client-side routing
-- Vite as the build tool/dev server
-- Plain JavaScript/JSX (no TypeScript)
-- Plain CSS — one hand-written stylesheet, no framework or preprocessor
-- Google Fonts (Archivo, Work Sans, JetBrains Mono), loaded via a CSS `@import`
+## Design
 
-**Note on React:** the WeIntern Week 1 handbook describes this task as an HTML/CSS assignment and states that external UI libraries need approval. React was used here as a deliberate, disclosed choice rather than an oversight — no CSS framework or component library was added, and all styling is plain, hand-written CSS.
+Charcoal, burgundy, and sand on an off-white canvas. Display type is Young Serif with Manrope for body text. The layout uses an arch-shaped hero card, numbered section labels, large serif headings, pill-shaped buttons and links, and alternating light, dark, and burgundy bands. A dark theme is available from the header toggle: the light areas switch to charcoal surfaces while the burgundy and sand brand bands stay the same. Motion is limited to hover and focus states, the slow monogram rotation, and the scroll reveals.
 
-The technologies listed under Featured Projects above (YOLO, OpenCV, FastAPI, MongoDB, DeepFace, etc.) belong to those *showcased* projects — they are not dependencies of this portfolio site.
+## Accessibility
 
----
+- Semantic HTML with a consistent heading hierarchy (one `h1` per page)
+- Labelled form controls with native validation
+- Skip-to-content link and visible keyboard focus states on every interactive element
+- `aria-current="page"` on the active navigation link
+- Mobile navigation exposes its state via `aria-expanded` / `aria-controls`
+- Escape closes the mobile menu and returns focus to the toggle button
+- The theme toggle is a real button that exposes its state through `aria-pressed`
+- `prefers-reduced-motion` disables the rotation animations, scroll reveals, and smooth scrolling
+- External links are announced as opening in a new tab
+- Text and interactive colors checked against WCAG AA contrast ratios in both the light and dark themes
+
+## Responsive Design
+
+Built mobile-first and checked at:
+
+- 375px, 430px (mobile)
+- 768px, 834px (tablet)
+- 1024px, 1280px, 1440px (desktop)
+
+Above 1280px the type and spacing scale up gradually and the content spans the full width of the screen, so wide monitors are not left with empty side margins. This was also checked for horizontal overflow at 1600px, 1904px, 1920px, and 2560px.
 
 ## Project Structure
 
 ```
 portfolio-website/
 ├── index.html
-├── vite.config.js
-├── package.json
-├── public/
-│   └── assets/
-├── screenshots/
-└── src/
-    ├── main.jsx
-    ├── App.jsx
-    ├── components/
-    │   ├── Navbar.jsx
-    │   ├── Footer.jsx
-    │   ├── ProjectCard.jsx
-    │   ├── ProjectGrid.jsx
-    │   ├── SkillGroup.jsx
-    │   ├── ExperienceItem.jsx
-    │   └── ContactItem.jsx
-    ├── pages/
-    │   ├── Home.jsx
-    │   ├── About.jsx
-    │   ├── Projects.jsx
-    │   └── Contact.jsx
-    ├── data/
-    │   ├── projects.js
-    │   └── skills.js
-    └── styles/
-        └── style.css
+├── about.html
+├── projects.html
+├── skills.html
+├── resume.html
+├── contact.html
+├── css/
+│   └── style.css
+├── js/
+│   ├── script.js
+│   └── theme-init.js
+└── assets/
+    ├── fonts/
+    │   ├── manrope-variable-latin.woff2
+    │   └── young-serif-latin.woff2
+    └── resume/
+        └── Tirth-Vaghela-Resume.pdf
 ```
 
----
+## Running Locally
 
-## Getting Started
+No build step or dependencies are required.
 
-1. Clone the repository
-2. Move into the project directory:
-   ```
-   cd portfolio-website
-   ```
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
-
-To create a production build:
+Simplest option — open the file directly in a browser:
 
 ```
-npm run build
+portfolio-website/index.html
 ```
 
----
+Or serve it locally with Python's built-in server:
 
-## Available Scripts
+```
+cd portfolio-website
+python -m http.server 8000
+```
 
-- `npm run dev` — starts the Vite development server
-- `npm run build` — builds the production bundle into `dist/`
-- `npm run preview` — serves the production build locally, for a final check before deployment
+Then visit `http://localhost:8000`.
 
----
+## Live Website
 
-## Design
-
-The site follows an editorial, minimal visual direction:
-
-- Warm off-white background (`#F7F6F2`) with near-black text (`#101114`)
-- A single restrained cobalt-blue accent (`#2451D8`), used sparingly for links, buttons, and active states
-- Sharp corners (near-zero border radius) and 1px hairline rules used throughout for structure, instead of cards, shadows, or gradients
-- A three-typeface system: Archivo for headings, Work Sans for body text, JetBrains Mono for small metadata and labels
-- Layouts built with CSS Grid and Flexbox, including asymmetric two-column sections
-
----
+Live Demo: To be added after deployment
 
 ## Screenshots
 
-**Home — desktop**
-![Home page, desktop view](screenshots/portfolio-home-desktop.png)
+Screenshots will be added to the repository after final browser and deployment verification.
 
-**Home — mobile**
-![Home page, mobile view](screenshots/portfolio-home-mobile.png)
+## Credits
 
-**Projects**
-![Projects page](screenshots/portfolio-projects.png)
+Fonts: [Young Serif](https://fonts.google.com/specimen/Young+Serif) and [Manrope](https://fonts.google.com/specimen/Manrope), both licensed under the SIL Open Font License 1.1.
 
-**Contact**
-![Contact page](screenshots/portfolio-contact.png)
+## Author
 
----
+**Tirth Vaghela**
+Email: vaghelatirth719@gmail.com
+GitHub: https://github.com/Tirthvaghela
+LinkedIn: https://www.linkedin.com/in/tirthvaghela/
 
-## Accessibility
+## Assignment Context
 
-- Semantic landmarks (`<header>`, `<nav>`, `<main>`, `<footer>`)
-- All interactive elements are keyboard-focusable, with a visible `:focus-visible` outline
-- The mobile navigation toggle is a real `<button>` with `aria-expanded` and `aria-controls`
-- Contact form fields use real `<label htmlFor>` associations
-- The contact form's submission status is announced via an `aria-live="polite"` region
-- Native HTML5 form validation (`required` fields, `type="email"`)
-
-This has not been audited against a formal accessibility standard (e.g. WCAG) — the above are the specific practices actually implemented.
-
----
-
-## Responsive Design
-
-Layout has been tested at desktop (1280px), tablet (834px), and mobile (375px) widths, with no horizontal overflow at any of them. This isn't a guarantee of correct rendering on every possible device or browser.
-
----
-
-## Contact
-
-The Contact page (`/contact`) lists:
-
-- **Email:** vaghelatirth719@gmail.com
-- **GitHub:** github.com/Tirthvaghela
-- **LinkedIn:** linkedin.com/in/tirthvaghela
-- **Portfolio:** tirthvaghela.in
-- **Location:** Ahmedabad, Gujarat, India
-
-The contact form on that page is currently **frontend-only** — submitting it does not send an email or reach any backend/service. It shows an on-page status message saying so, and points to the email address above as the real way to get in touch.
-
----
-
-## Development Notes
-
-The project intentionally keeps dependencies minimal (five packages total) and favors small, reusable components — `ProjectCard`/`ProjectGrid`, `ExperienceItem`, `SkillGroup`, `ContactItem` — driven by plain local data files (`src/data/projects.js`, `src/data/skills.js`) rather than hardcoding content into each page.
+This project was developed as part of the Week 1 Web Development assignment at WeIntern.
