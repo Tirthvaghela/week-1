@@ -354,6 +354,7 @@ input, textarea { font: inherit; color: inherit; }
 
 .hero--page .hero__main { padding-bottom: 3rem; }
 .hero--page .hero__title { margin-bottom: 1.5rem; }
+.hero--about { min-height: calc(100svh - 5rem); display: grid; align-items: end; }
 .hero--wide .hero__grid { grid-template-columns: 1fr; }
 
 .page-title {
