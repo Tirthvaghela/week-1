@@ -133,7 +133,7 @@ Opening `index.html` directly in a browser also works.
 
 ## Live Website
 
-Live website: To be added after deployment.
+Live website: https://aura-studio-khaki.vercel.app
 
 ## Screenshots
 
