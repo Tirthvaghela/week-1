@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURA Studio &mdash; Spaces designed to be lived in.</title>
+  <meta name="description" content="AURA Studio is an architecture and interior design practice creating considered homes and workplaces. A fictional studio created for a web development assignment.">
+  <meta name="theme-color" content="#F4F0E8">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+  <!-- Architectural column grid: six hairlines (four on phones), decorative only -->
+  <div class="grid-overlay" aria-hidden="true">
+    <div class="grid-overlay__inner"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <header class="site-header" data-header>
+    <div class="site-header__bar">
+      <a class="brand" href="#top" aria-label="AURA Studio, back to top">
+        <span class="brand__word">AURA</span><span class="brand__dot" aria-hidden="true"></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-menu-toggle>
+        <span data-menu-label>Menu</span>
+        <span class="menu-toggle__icon" aria-hidden="true"><span></span><span></span></span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Primary">
+        <ul class="site-nav__list" role="list">
+          <li><a class="nav-link" href="#studio"><span class="nav-link__num" aria-hidden="true"></span><span class="nav-link__label">Studio</span></a></li>
+          <li><a class="nav-link" href="#services"><span class="nav-link__num" aria-hidden="true"></span><span class="nav-link__label">Services</span></a></li>
+          <li><a class="nav-link" href="#projects"><span class="nav-link__num" aria-hidden="true"></span><span class="nav-link__label">Projects</span></a></li>
+          <li><a class="nav-link" href="#contact"><span class="nav-link__num" aria-hidden="true"></span><span class="nav-link__label">Contact</span></a></li>
+        </ul>
+        <div class="site-nav__foot">
+          <a class="btn btn--nav" href="#contact"><span>Start a project</span> <span class="btn__arrow" aria-hidden="true">&#8599;</span></a>
+          <p class="site-nav__note">hello@aurastudio.example &middot; Ahmedabad, India</p>
+        </div>
+      </nav>
+    </div>
+    <div class="site-header__progress" aria-hidden="true"><div class="site-header__progress-bar" data-progress></div></div>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+
+        <div class="hero__head">
+          <div class="hero__meta">
+            <span>Architecture / Interiors</span>
+            <span class="hero__meta-group"><span>Est. 2026</span><span>Ahmedabad, India</span></span>
+          </div>
+
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__mask"><span class="hero__line">Spaces</span></span>
+            <span class="hero__mask hero__mask--2"><span class="hero__line">designed</span></span>
+            <span class="hero__mask hero__mask--3"><span class="hero__line hero__line--accent">to be lived in.</span></span>
+          </h1>
+        </div>
+
+        <figure class="hero__figure">
+          <div class="hero__frame">
+            <div class="hero__plate">
+              <div class="hero__plate-inner">
+                <img class="fill" src="assets/images/aura-hero-residence.webp" width="1200" height="800" fetchpriority="high" decoding="async"
+                     alt="A contemporary courtyard house at dusk: board-formed concrete volumes, warm timber cladding and tall glazed openings around a still pool, glowing from within.">
+              </div>
+            </div>
+          </div>
+          <figcaption class="hero__caption">
+            <span>Fig. 00 &mdash; Concept residence</span>
+            <span>Architecture + Interiors</span>
+          </figcaption>
+        </figure>
+
+        <div class="hero__foot">
+          <p class="hero__lead">AURA Studio is an architecture and interior design practice creating considered homes and workplaces, from first sketch to final detail.</p>
+          <div class="hero__actions">
+            <a class="btn btn--dark" href="#projects"><span>Explore Projects</span> <span class="btn__arrow" aria-hidden="true">&#8595;</span></a>
+            <a class="text-link" href="#contact">Start a Conversation</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 01 STUDIO ===================== -->
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div class="wrap studio__wrap">
+
+        <div class="studio__head">
+          <p class="label studio__label">01 &mdash; Studio</p>
+          <h2 class="studio__title" id="studio-title">Architecture with a sense of place.</h2>
+        </div>
+
+        <p class="studio__statement" data-words><span data-word>AURA </span><span data-word>Studio </span><span data-word>approaches </span><span data-word>every </span><span data-word>project </span><span data-word>as </span><span data-word>an </span><span data-word>opportunity </span><span data-word>to </span><span data-word>create </span><span data-word>spaces </span><span data-word>that </span><span data-word>feel </span><span data-word>considered, </span><span data-word>comfortable </span><span data-word>and </span><span data-word>connected </span><span data-word>to </span><span data-word>the </span><span data-word>people </span><span data-word>who </span><span data-word>use </span><span data-word>them.</span></p>
+
+        <div class="studio__body">
+          <figure class="studio__fig studio__fig--material">
+            <div class="studio__plate studio__plate--portrait" data-clip>
+              <img class="fill" src="assets/images/studio-material.webp" width="590" height="787" loading="lazy" decoding="async"
+                   alt="A presentation board for a fictional courtyard house: a section drawing above a palette of board-formed concrete, oiled timber, natural stone, dark tile and glass.">
+            </div>
+            <figcaption class="caption">Material</figcaption>
+          </figure>
+
+          <figure class="studio__fig studio__fig--light">
+            <div class="studio__plate studio__plate--square" data-clip>
+              <img class="fill" src="assets/images/studio-light.webp" width="590" height="590" loading="lazy" decoding="async"
+                   alt="Sunlight and leaf shadows falling across a lime-plaster wall beside a timber desk, a woven chair and a full-height glass wall.">
+            </div>
+            <figcaption class="caption">Light</figcaption>
+          </figure>
+
+          <div class="studio__text" data-reveal>
+            <p>We begin with light and how it moves through a day, then choose materials that age well and proportions that feel natural to inhabit. Each decision is tested against its context &mdash; the site, the climate, the street &mdash; and against everyday life: how a home is really used, from the first coffee to the last light.</p>
+            <ul class="topics" role="list">
+              <li><span>01</span>Movement</li>
+              <li><span>02</span>Light</li>
+              <li><span>03</span>Material</li>
+              <li><span>04</span>Proportion</li>
+              <li><span>05</span>Function</li>
+              <li><span>06</span>Context</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 02 SERVICES ===================== -->
+    <section class="services" id="services" aria-labelledby="services-title">
+      <div class="wrap services__wrap">
+
+        <div class="services__head">
+          <div class="services__titles">
+            <p class="label label--stone">02 &mdash; Services</p>
+            <h2 class="display" id="services-title" data-reveal>What we <em>design.</em></h2>
+          </div>
+          <p class="services__hint">Five disciplines, one studio. Hover or focus a service to preview.</p>
+        </div>
+
+        <div class="services__body">
+          <ol class="service-list" role="list" data-services>
+            <li class="service is-active">
+              <span class="service__line" aria-hidden="true"></span>
+              <h3 class="service__head"><button class="service__btn" type="button" aria-expanded="true" aria-controls="service-panel-1" data-service="0">
+                <span class="service__num" aria-hidden="true">01</span>
+                <span class="service__name">Architecture</span>
+                <span class="service__arrow" aria-hidden="true">&#8599;</span>
+              </button></h3>
+              <div class="service__panel" id="service-panel-1"><div class="service__panel-inner"><p>New buildings shaped by site, light and climate.</p></div></div>
+            </li>
+            <li class="service">
+              <span class="service__line" aria-hidden="true"></span>
+              <h3 class="service__head"><button class="service__btn" type="button" aria-expanded="false" aria-controls="service-panel-2" data-service="1">
+                <span class="service__num" aria-hidden="true">02</span>
+                <span class="service__name">Interior Design</span>
+                <span class="service__arrow" aria-hidden="true">&#8599;</span>
+              </button></h3>
+              <div class="service__panel" id="service-panel-2"><div class="service__panel-inner"><p>Layout, materials and lighting considered as one design.</p></div></div>
+            </li>
+            <li class="service">
+              <span class="service__line" aria-hidden="true"></span>
+              <h3 class="service__head"><button class="service__btn" type="button" aria-expanded="false" aria-controls="service-panel-3" data-service="2">
+                <span class="service__num" aria-hidden="true">03</span>
+                <span class="service__name">Residential</span>
+                <span class="service__arrow" aria-hidden="true">&#8599;</span>
+              </button></h3>
+              <div class="service__panel" id="service-panel-3"><div class="service__panel-inner"><p>Homes and renovations designed around everyday life.</p></div></div>
+            </li>
+            <li class="service">
+              <span class="service__line" aria-hidden="true"></span>
+              <h3 class="service__head"><button class="service__btn" type="button" aria-expanded="false" aria-controls="service-panel-4" data-service="3">
+                <span class="service__num" aria-hidden="true">04</span>
+                <span class="service__name">Commercial</span>
+                <span class="service__arrow" aria-hidden="true">&#8599;</span>
+              </button></h3>
+              <div class="service__panel" id="service-panel-4"><div class="service__panel-inner"><p>Workplaces and hospitality spaces with purpose and character.</p></div></div>
+            </li>
+            <li class="service">
+              <span class="service__line" aria-hidden="true"></span>
+              <h3 class="service__head"><button class="service__btn" type="button" aria-expanded="false" aria-controls="service-panel-5" data-service="4">
+                <span class="service__num" aria-hidden="true">05</span>
+                <span class="service__name">Space Planning</span>
+                <span class="service__arrow" aria-hidden="true">&#8599;</span>
+              </button></h3>
+              <div class="service__panel" id="service-panel-5"><div class="service__panel-inner"><p>Measured layouts that improve movement and functionality before construction.</p></div></div>
+            </li>
+          </ol>
+
+          <div class="service-preview" aria-hidden="true">
+            <div class="service-preview__frame">
+              <div class="service-preview__slide is-active"><img class="fill" src="assets/images/aura-hero-residence.webp" width="1200" height="800" loading="lazy" decoding="async" alt=""></div>
+              <div class="service-preview__slide"><img class="fill" src="assets/images/project-meridian-workspace.webp" width="539" height="676" loading="lazy" decoding="async" alt=""></div>
+              <div class="service-preview__slide"><img class="fill" src="assets/images/project-terrace-apartment.webp" width="1078" height="615" loading="lazy" decoding="async" alt=""></div>
+              <div class="service-preview__slide"><img class="fill" src="assets/images/project-terrace-apartment.webp" width="1078" height="615" loading="lazy" decoding="async" alt=""></div>
+              <div class="service-preview__slide"><img class="fill" src="assets/images/studio-material.webp" width="590" height="787" loading="lazy" decoding="async" alt=""></div>
+              <span class="service-preview__count"><span data-service-count>01</span> / 05</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== 03 SELECTED PROJECTS ===================== -->
+    <section class="projects" id="projects" aria-labelledby="projects-title">
+      <div class="wrap projects__intro">
+        <div class="projects__titles">
+          <p class="label">03 &mdash; Selected Projects</p>
+          <h2 class="display display--narrow" id="projects-title" data-reveal>Spaces, shaped <em>with intention.</em></h2>
+        </div>
+        <p class="projects__note">Fictional concept projects created for this site. Not real clients, commissions or completed buildings.</p>
+      </div>
+
+      <div class="projects__stack">
+
+        <article class="project project--full" aria-labelledby="project-1-title">
+          <div class="project__inner">
+            <figure class="project__media">
+              <div class="project__zoom">
+                <img class="fill" src="assets/images/project-casa-nira.webp" width="1200" height="675" loading="lazy" decoding="async"
+                     alt="Daylight view of a fictional courtyard residence: a rough stone wall, a still pool, a timber-lined covered terrace and a tree casting soft shadows on the paving.">
+              </div>
+            </figure>
+            <div class="project__panel">
+              <div class="project__top">
+                <span class="project__numeral" aria-hidden="true">01</span>
+                <span class="project__count"><span class="sr-only">Project </span>01 / 04</span>
+              </div>
+              <div class="project__info">
+                <h3 class="project__title" id="project-1-title">Casa Nira</h3>
+                <dl class="project__meta">
+                  <div><dt>Type</dt><dd>Residential</dd></div>
+                  <div><dt>Location</dt><dd>Ahmedabad, India</dd></div>
+                  <div><dt>Year</dt><dd>2026</dd></div>
+                </dl>
+                <p class="project__desc">A quiet residence shaped around natural light, courtyards and material warmth.</p>
+                <button class="project__open" type="button" data-project-open>View Project<span class="sr-only">: Casa Nira</span> <span aria-hidden="true">&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--right" aria-labelledby="project-2-title">
+          <div class="project__inner">
+            <figure class="project__media">
+              <div class="project__zoom">
+                <img class="fill" src="assets/images/project-meridian-workspace.webp" width="539" height="676" loading="lazy" decoding="async"
+                     alt="A calm interior with a timber desk and woven chair beside a floor-to-ceiling glass wall, sunlight moving across a lime-plaster wall and a pendant light overhead.">
+              </div>
+            </figure>
+            <div class="project__panel">
+              <div class="project__top">
+                <span class="project__numeral" aria-hidden="true">02</span>
+                <span class="project__count"><span class="sr-only">Project </span>02 / 04</span>
+              </div>
+              <div class="project__info">
+                <h3 class="project__title" id="project-2-title">Meridian Workspace</h3>
+                <dl class="project__meta">
+                  <div><dt>Type</dt><dd>Commercial</dd></div>
+                  <div><dt>Location</dt><dd>Bengaluru, India</dd></div>
+                  <div><dt>Year</dt><dd>2025</dd></div>
+                </dl>
+                <p class="project__desc">A calm working environment organized around daylight, timber and flexible shared spaces.</p>
+                <button class="project__open" type="button" data-project-open>View Project<span class="sr-only">: Meridian Workspace</span> <span aria-hidden="true">&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--full" aria-labelledby="project-3-title">
+          <div class="project__inner">
+            <figure class="project__media">
+              <div class="project__zoom">
+                <img class="fill" src="assets/images/project-terrace-apartment.webp" width="1078" height="615" loading="lazy" decoding="async"
+                     alt="A living space opening onto a planted courtyard with a small tree, low timber and stone furniture, and tall sliding glass doors under a concrete ceiling.">
+              </div>
+            </figure>
+            <div class="project__panel">
+              <div class="project__top">
+                <span class="project__numeral" aria-hidden="true">03</span>
+                <span class="project__count"><span class="sr-only">Project </span>03 / 04</span>
+              </div>
+              <div class="project__info">
+                <h3 class="project__title" id="project-3-title">The Terrace Apartment</h3>
+                <dl class="project__meta">
+                  <div><dt>Type</dt><dd>Interior Design</dd></div>
+                  <div><dt>Location</dt><dd>Mumbai, India</dd></div>
+                  <div><dt>Year</dt><dd>2024</dd></div>
+                </dl>
+                <p class="project__desc">An understated interior built around tactile materials, muted tones and carefully framed views.</p>
+                <button class="project__open" type="button" data-project-open>View Project<span class="sr-only">: The Terrace Apartment</span> <span aria-hidden="true">&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project--left" aria-labelledby="project-4-title">
+          <div class="project__inner">
+            <figure class="project__media">
+              <div class="project__zoom">
+                <img class="fill" src="assets/images/project-lakeside-pavilion.webp" width="540" height="675" loading="lazy" decoding="async"
+                     alt="A natural stone wall beside a still reflecting pool, with the edge of a slim timber-and-concrete pavilion catching warm evening light.">
+              </div>
+            </figure>
+            <div class="project__panel">
+              <div class="project__top">
+                <span class="project__numeral" aria-hidden="true">04</span>
+                <span class="project__count"><span class="sr-only">Project </span>04 / 04</span>
+              </div>
+              <div class="project__info">
+                <h3 class="project__title" id="project-4-title">Lakeside Pavilion</h3>
+                <dl class="project__meta">
+                  <div><dt>Type</dt><dd>Architecture</dd></div>
+                  <div><dt>Location</dt><dd>Udaipur, India</dd></div>
+                  <div><dt>Year</dt><dd>2024</dd></div>
+                </dl>
+                <p class="project__desc">A compact pavilion where stone, landscape and water define the experience of the space.</p>
+                <button class="project__open" type="button" data-project-open>View Project<span class="sr-only">: Lakeside Pavilion</span> <span aria-hidden="true">&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== 04 OUR APPROACH ===================== -->
+    <section class="approach" id="approach" aria-labelledby="approach-title">
+
+      <div class="approach__drift" aria-hidden="true">
+        <p class="approach__drift-text" data-drift>Light <span>&mdash;</span> Material <span>&mdash;</span> Life <span>&mdash;</span> Light <span>&mdash;</span> Material <span>&mdash;</span> Life</p>
+      </div>
+
+      <div class="wrap approach__grid">
+        <div class="approach__intro">
+          <p class="label">04 &mdash; Our Approach</p>
+          <h2 class="approach__title" id="approach-title" data-reveal>Good spaces do more than <em>look good.</em></h2>
+          <p class="approach__lead">We believe the best spaces become part of everyday life. They respond to light, climate, movement and the people who inhabit them.</p>
+        </div>
+
+        <ol class="principles" role="list">
+          <li class="principle" data-reveal>
+            <span class="principle__num" aria-hidden="true">01</span>
+            <h3 class="principle__label">Light</h3>
+            <p class="principle__text">Natural light is treated as a material in its own right.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num" aria-hidden="true">02</span>
+            <h3 class="principle__label">Material</h3>
+            <p class="principle__text">We choose materials for how they age, feel and belong to their context.</p>
+          </li>
+          <li class="principle" data-reveal>
+            <span class="principle__num" aria-hidden="true">03</span>
+            <h3 class="principle__label">Life</h3>
+            <p class="principle__text">Every decision begins with how a space will actually be lived in.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="wrap stats">
+        <h3 class="sr-only">Studio in numbers</h3>
+        <dl class="stats__grid">
+          <div class="stat"><dt>Years of practice</dt><dd data-count="12" data-pad="2" data-suffix="+">12+</dd></div>
+          <div class="stat"><dt>Projects</dt><dd data-count="60" data-pad="2" data-suffix="+">60+</dd></div>
+          <div class="stat"><dt>Designers</dt><dd data-count="9" data-pad="2" data-suffix="">09</dd></div>
+          <div class="stat"><dt>Cities</dt><dd data-count="4" data-pad="2" data-suffix="">04</dd></div>
+        </dl>
+        <p class="stats__note">Fictional studio figures created for this concept site.</p>
+      </div>
+
+    </section>
+
+    <!-- ===================== CLOSING CTA ===================== -->
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap cta__wrap">
+
+        <div class="cta__head">
+          <p class="label cta__label">Begin</p>
+          <p class="cta__tag">Architecture &middot; Interiors &middot; Space Planning</p>
+        </div>
+
+        <h2 class="cta__title" id="cta-title" data-reveal><span class="cta__line">Have a space</span> <em class="cta__line cta__line--2">in mind?</em></h2>
+
+        <div class="cta__body" data-reveal>
+          <p class="cta__lead">Tell us what you are imagining. We would love to hear about the place, the purpose and the possibilities.</p>
+          <div class="cta__actions">
+            <a class="btn btn--clay" href="#contact"><span>Start a Project</span> <span class="btn__arrow" aria-hidden="true">&#8599;</span></a>
+            <a class="cta__mail" href="mailto:hello@aurastudio.example">hello@aurastudio.example</a>
+          </div>
+        </div>
+
+        <figure class="cta__figure">
+          <div class="cta__frame">
+            <div class="cta__plate" data-clip>
+              <img class="fill" src="assets/images/aura-hero-residence.webp" width="1200" height="800" loading="lazy" decoding="async" alt="">
+            </div>
+          </div>
+          <figcaption class="cta__caption">
+            <span>Fig. 01 &mdash; Courtyard residence, dusk</span>
+            <span>Ahmedabad, India</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </section>
+
+    <!-- ===================== 05 CONTACT ===================== -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap contact__grid">
+
+        <div class="contact__intro">
+          <div class="contact__lede">
+            <p class="label label--stone">05 &mdash; Start a Project</p>
+            <h2 class="contact__title" id="contact-title">Let&rsquo;s make room for something considered.</h2>
+            <p class="contact__lead">Share a little about your project and we&rsquo;ll start the conversation.</p>
+          </div>
+
+          <address class="contact__details">
+            <div>
+              <p class="mini-label">Studio</p>
+              <p>AURA Studio</p>
+              <p>Ahmedabad, India</p>
+              <a class="rule-link" href="mailto:hello@aurastudio.example">hello@aurastudio.example</a>
+            </div>
+            <div>
+              <p class="mini-label">Follow</p>
+              <ul role="list">
+                <li><a class="plain-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram<span class="sr-only"> (demo link, opens in a new tab)</span></a></li>
+                <li><a class="plain-link" href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest<span class="sr-only"> (demo link, opens in a new tab)</span></a></li>
+                <li><a class="plain-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> (demo link, opens in a new tab)</span></a></li>
+              </ul>
+              <p class="contact__demo">Demo links, not real accounts.</p>
+            </div>
+          </address>
+        </div>
+
+        <form class="form" id="enquiry-form" action="#contact" method="get" aria-describedby="req-note">
+          <p class="form__req" id="req-note"><span class="req" aria-hidden="true">*</span> Required field</p>
+
+          <div class="form__row">
+            <div class="field">
+              <label class="field__label" for="enq-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="enq-name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="e.g. Anaya Mehta" aria-describedby="enq-name-error">
+              <p class="field__error" id="enq-name-error" hidden></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="enq-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <input class="field__control" id="enq-email" name="email" type="email" autocomplete="email" required placeholder="you@example.com" aria-describedby="enq-email-error">
+              <p class="field__error" id="enq-email-error" hidden></p>
+            </div>
+          </div>
+
+          <div class="form__row">
+            <div class="field">
+              <label class="field__label" for="enq-phone">Phone Number <span class="field__optional">(optional)</span></label>
+              <input class="field__control" id="enq-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" pattern="[0-9+\s.\-\(\)]{7,20}" title="Digits, spaces and + ( ) . - only, 7 to 20 characters" placeholder="+91 00000 00000" aria-describedby="enq-phone-error">
+              <p class="field__error" id="enq-phone-error" hidden></p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="enq-type">Project Type <span class="req" aria-hidden="true">*</span></label>
+              <div class="field__select">
+                <select class="field__control" id="enq-type" name="type" required aria-describedby="enq-type-error">
+                  <option value="" selected disabled>Select a project type</option>
+                  <option value="new-home">New home</option>
+                  <option value="renovation">Renovation</option>
+                  <option value="interior-design">Interior design</option>
+                  <option value="commercial-fit-out">Commercial fit-out</option>
+                  <option value="space-planning">Space planning</option>
+                  <option value="other">Other</option>
+                </select>
+                <span class="field__select-arrow" aria-hidden="true">&#8595;</span>
+              </div>
+              <p class="field__error" id="enq-type-error" hidden></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <div class="field__head">
+              <label class="field__label" for="enq-message">Message <span class="req" aria-hidden="true">*</span></label>
+              <p class="field__hint" id="enq-message-hint">20 to 1,000 characters</p>
+            </div>
+            <textarea class="field__control" id="enq-message" name="message" rows="5" required minlength="20" maxlength="1000" placeholder="The site, the brief, the timeline &mdash; whatever you know so far." aria-describedby="enq-message-hint enq-message-error"></textarea>
+            <p class="field__error" id="enq-message-error" hidden></p>
+          </div>
+
+          <div class="form__actions">
+            <p class="form__note">Demo form. Details are checked in your browser and not sent anywhere.</p>
+            <button class="btn btn--dark" type="submit"><span>Send Project Enquiry</span> <span class="btn__arrow" aria-hidden="true">&rarr;</span></button>
+          </div>
+          <p class="form__status" id="enquiry-status" role="status" aria-live="polite" tabindex="-1"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer" data-footer>
+    <div class="wrap site-footer__wrap">
+      <div class="site-footer__top">
+        <p class="site-footer__tagline">Spaces designed to be lived in.</p>
+        <div class="site-footer__cols">
+        </div>
+      </div>
+
+      <p class="site-footer__mark" aria-hidden="true" data-reveal>AURA<span>.</span></p>
+
+      <div class="site-footer__legal">
+        <p>&copy; 2026 AURA Studio. A fictional studio created for a web development assignment.</p>
+        <a class="back-top" href="#top">Back to top <span aria-hidden="true">&#8593;</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== PROJECT VIEWER (progressive enhancement, filled by js/script.js) ===================== -->
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title">
+    <div class="project-dialog__panel">
+      <button class="project-dialog__close" type="button" data-dialog-close>Close <span aria-hidden="true">&times;</span></button>
+      <figure class="project-dialog__figure" data-dialog-figure></figure>
+      <div class="project-dialog__body">
+        <p class="project-dialog__numeral" aria-hidden="true"></p>
+        <p class="project-dialog__count"></p>
+        <h2 class="project-dialog__title" id="project-dialog-title"></h2>
+        <dl class="project-dialog__meta"></dl>
+        <p class="project-dialog__desc"></p>
+        <p class="project-dialog__note">A fictional concept project. No client, commission or completed building is implied.</p>
+        <a class="text-link project-dialog__enquire" href="#contact" data-dialog-enquire>Enquire about similar work</a>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

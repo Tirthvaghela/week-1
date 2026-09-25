@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="AURA Studio">
+  <title>AURA Studio</title>
+  <rect width="64" height="64" fill="#1C1A17"/>
+  <path d="M15 51 32 13l17 38" fill="none" stroke="#F4F0E8" stroke-width="3.5" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M22.5 38h19" fill="none" stroke="#9C5537" stroke-width="3.5" stroke-linecap="square"/>
+</svg>
