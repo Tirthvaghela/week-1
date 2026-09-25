@@ -143,14 +143,14 @@ The site is deployed on Vercel as a static HTML, CSS, and JavaScript project wit
 
 ## Screenshots
 
-The required submission views are included in the `screenshots/` folder:
+The required submission views are in the repository's `screenshots/` folder, one level above this project:
 
 | View | Screenshot |
 | --- | --- |
-| Desktop full-page home | [portfolio-home-desktop.png](screenshots/portfolio-home-desktop.png) |
-| Mobile homepage | [portfolio-home-mobile.png](screenshots/portfolio-home-mobile.png) |
-| Projects section | [portfolio-projects.png](screenshots/portfolio-projects.png) |
-| Contact page and form | [portfolio-contact.png](screenshots/portfolio-contact.png) |
+| Desktop full-page home | [portfolio-home-desktop.png](../screenshots/portfolio-home-desktop.png) |
+| Mobile homepage | [portfolio-home-mobile.png](../screenshots/portfolio-home-mobile.png) |
+| Projects section | [portfolio-projects.png](../screenshots/portfolio-projects.png) |
+| Contact page and form | [portfolio-contact.png](../screenshots/portfolio-contact.png) |
 
 ## Credits
 
